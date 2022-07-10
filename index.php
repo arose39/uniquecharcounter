@@ -4,7 +4,6 @@
 require_once realpath("vendor/autoload.php");
 
 use UniqueCharactersCounterApp\AnswerCacheSaver;
-use UniqueCharactersCounterApp\PreviousAnswerLoader;
 use UniqueCharactersCounterApp\UniqueCharactersCounter;
 
 $answerCacheSaver = new AnswerCacheSaver();

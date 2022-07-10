@@ -4,7 +4,7 @@ namespace UniqueCharactersCounterApp;
 
 class UniqueCharactersCounter
 {
-    public CustomCollection $charactersSet;
+    private CustomCollection $charactersSet;
 
     private AnswerCacheSaver $answerCacheSaver;
 
@@ -37,7 +37,7 @@ class UniqueCharactersCounter
         return $uniqueCharsSum;
     }
 
-    private function replaceSpaces(string $string)
+    private function replaceSpaces(string $string): string
     {
         $stringWithoutSpaces = str_replace(" ", '', $string);
 

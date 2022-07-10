@@ -1,0 +1,17 @@
+<?xml version ="1.0" encoding = "UTF-8" ?>
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuite name="AnswerCacheSaver">
+        <directory suffix="Test.php">./tests/AnswerCacheSaver</directory>
+    </testsuite>
+    <testsuite name="UniqueCharactersCounter">
+        <directory suffix="Test.php">./tests/UniqueCharactersCounter</directory>
+    </testsuite>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <file>./src/CacheSaver.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

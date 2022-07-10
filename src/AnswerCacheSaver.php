@@ -6,10 +6,14 @@ use UniqueCharactersCounterApp\CacheSaver;
 
 class AnswerCacheSaver implements CacheSaver
 {
-    public function save(string $string, int $answer): void
+    public function save(string $string, int $answer): bool
     {
         $content = json_encode(["$string", $answer]);
-        file_put_contents("cache/cache.txt", $content);
+        if(file_put_contents("cache/cache.txt", $content)){
+            return true;
+        }else{
+            return false;
+        };
     }
 
     public function get(string $string): null|int

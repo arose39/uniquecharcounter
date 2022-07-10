@@ -1,8 +1,6 @@
 <?php
 
-
 namespace UniqueCharactersCounterApp;
-
 
 class CustomCollection implements \Iterator, \ArrayAccess, \Countable
 {
@@ -65,7 +63,6 @@ class CustomCollection implements \Iterator, \ArrayAccess, \Countable
     {
         unset($this->container[$offset]);
     }
-
 
     public function count(): int
     {
