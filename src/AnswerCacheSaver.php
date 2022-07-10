@@ -2,6 +2,8 @@
 
 namespace UniqueCharactersCounterApp;
 
+use UniqueCharactersCounterApp\CacheSaver;
+
 class AnswerCacheSaver implements CacheSaver
 {
     public function save(string $string, int $answer): void

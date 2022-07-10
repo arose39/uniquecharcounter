@@ -4,6 +4,8 @@ namespace UniqueCharactersCounterApp;
 
 class UniqueCharactersCounter
 {
+    public CustomCollection $charactersSet;
+
     private AnswerCacheSaver $answerCacheSaver;
 
     public function __construct($answerCacheSaver)
@@ -17,7 +19,7 @@ class UniqueCharactersCounter
         if ($this->answerCacheSaver->get($stringWithoutSpaces)) {
             return $this->answerCacheSaver->get($stringWithoutSpaces);
         }
-        $charactersSet = str_split($stringWithoutSpaces);
+        $charactersSet = new CustomCollection(str_split($stringWithoutSpaces));
         $uniqueCharsSum = 0;
         foreach ($charactersSet as $character) {
             $count = 0;
@@ -30,7 +32,7 @@ class UniqueCharactersCounter
                 $uniqueCharsSum++;
             }
         }
-        $this->answerCacheSaver->save($string, $uniqueCharsSum);
+        $this->answerCacheSaver->save($stringWithoutSpaces, $uniqueCharsSum);
 
         return $uniqueCharsSum;
     }
