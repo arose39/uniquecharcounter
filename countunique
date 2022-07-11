@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+require_once realpath("vendor/autoload.php");
+
+use UniqueCharactersCounterApp\AnswerCacheSaver;
+use UniqueCharactersCounterApp\UniqueCharactersCounter;
+
+$answerCacheSaver = new AnswerCacheSaver();
+$uniqueCharactersCounter = new UniqueCharactersCounter($answerCacheSaver);
+
+$argv = $_SERVER['argv'];
+
+// strip the application name and implode all arguments
+array_shift($argv);
+$string = implode($argv);
+
+if ($string) {
+    echo $uniqueCharactersCounter->count($string);
+} else {
+    echo "Введите строку для подсчета в ней уникальных символов (не считая пробелы).\n";
+    $string = readline();
+    echo $uniqueCharactersCounter->count($string);
+}
+
