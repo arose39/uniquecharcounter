@@ -6,4 +6,5 @@ For run console version this app, there ara two options:
  - 1 write command php countunique
  - 2 write command php countunique "characters set"
 
+
 In second case you will immediately see the result
