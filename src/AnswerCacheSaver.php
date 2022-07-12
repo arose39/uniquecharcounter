@@ -16,7 +16,7 @@ class AnswerCacheSaver implements CacheSaver
         };
     }
 
-    public function get(string $string): null|int
+    public function get(string $string): ?int
     {
         $content = unserialize(file_get_contents("cache/cache.txt"));
         if ($content) {

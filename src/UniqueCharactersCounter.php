@@ -4,8 +4,6 @@ namespace UniqueCharactersCounterApp;
 
 class UniqueCharactersCounter
 {
-    private CustomCollection $charactersSet;
-
     private AnswerCacheSaver $answerCacheSaver;
 
     public function __construct($answerCacheSaver)

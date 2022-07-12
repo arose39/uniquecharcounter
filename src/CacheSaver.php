@@ -6,5 +6,5 @@ interface CacheSaver
 {
     public function save(string $string, int $answer): bool;
 
-    public function get(string $string): null|int;
+    public function get(string $string): ?int;
 }
