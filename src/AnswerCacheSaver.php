@@ -8,7 +8,7 @@ class AnswerCacheSaver implements CacheSaver
 {
     public function save(string $string, int $answer): bool
     {
-        $content = json_encode(["$string", $answer]);
+        $content = serialize(['string'=>"$string", 'answer'=>$answer]);
         if(file_put_contents("cache/cache.txt", $content)){
             return true;
         }else{
@@ -18,10 +18,10 @@ class AnswerCacheSaver implements CacheSaver
 
     public function get(string $string): null|int
     {
-        $content = json_decode(file_get_contents("cache/cache.txt"));
+        $content = unserialize(file_get_contents("cache/cache.txt"));
         if ($content) {
-            $previousQuery = $content[0];
-            $previousAnswer = $content[1];
+            $previousQuery = $content['string'];
+            $previousAnswer = $content['answer'];
         } else {
             $previousQuery = null;
         }

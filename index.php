@@ -54,17 +54,6 @@ $uniqueCharactersCounter = new UniqueCharactersCounter($answerCacheSaver);
     ratione repellat repellendus repudiandae tenetur vel veniam vitae voluptas voluptatem voluptatibus. Assumenda beatae
     deserunt dicta facere numquam obcaecati possimus quae quia quod sed! Asperiores beatae corporis, dolorem doloremque
     eaque exercitationem impedit incidunt libero mollitia, nesciunt omnis praesentium provident quaerat quasi
-    repudiandae saepe sapiente sed similique ut vitae? Dolore laborum officiis quod saepe sequi soluta. Consectetur
-    deserunt dolorem earum eos error facere harum hic ipsa minima modi non obcaecati pariatur quia repellendus, rerum.
-    Amet aspernatur, at consectetur ducimus earum explicabo facere, hic iusto laudantium nobis quasi qui sapiente
-    similique voluptas voluptate. A aliquid, consequuntur delectus, dicta illum ipsum iste laborum laudantium officiis
-    omnis perspiciatis quod, suscipit. Corporis, delectus distinctio id labore nihil tenetur voluptate. A accusantium
-    aperiam architecto assumenda, beatae commodi culpa cum cupiditate ea earum esse est ex fugiat ipsum iusto laboriosam
-    libero magnam non optio perferendis possimus quaerat quasi quibusdam reiciendis rem sapiente sed sint ullam
-    veritatis voluptate. Adipisci, autem dicta dolor eaque, eos eveniet exercitationem id in incidunt maxime nobis quis
-    quo quos reprehenderit tempora tenetur veniam? Animi aspernatur atque, blanditiis doloremque eaque eius enim eos,
-    fuga ipsa iusto magni nostrum qui quia quidem quisquam reiciendis repellendus reprehenderit sed! Asperiores autem
-    cumque eligendi est, harum illo labore laborum, mollitia neque omnis provident quas quia quisquam quo repellat,
-    repellendus ullam?</p>
+    repudiandae saepe sapiente sed similique ut vitae? </p>
 </body>
 </html>
